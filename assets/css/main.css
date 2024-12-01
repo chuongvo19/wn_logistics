@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #040677; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #1acc8d; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #f3832c; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -45,11 +45,12 @@
 }
 
 .dark-background {
-  --background-color: #08005e;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --background-color: #1c3463;
+  --default-color: #f3832c;
+  --heading-color: #f3832c;
   --surface-color: #0c0091;
   --contrast-color: #ffffff;
+  --head-scoll-background-color: #2c4b8b;
 }
 
 /* Smooth scroll */
@@ -153,12 +154,33 @@ h6 {
   z-index: 997;
 }
 
+.header .background-logo-box {
+  display: flex;
+}
+
+.header .background-logo {
+  background-color: white;
+  padding-right: 30px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  opacity: 0.8;
+}
+
+.header .background-logo-extend {
+  width: 40px;
+  height: 53px;
+  margin-left: 0px;
+  background-color: #f3832c;
+  clip-path: polygon(50% 0, 100% 0, 50% 100%, 0% 100%);
+  opacity: 0.8;
+}
+
 .header .logo {
   line-height: 1;
+
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 53px;
   margin-right: 8px;
 }
 
@@ -176,7 +198,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #10058c;
+  --background-color: #2c4b8b;
 }
 
 /*--------------------------------------------------------------
@@ -1745,4 +1767,12 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.img-fluid {
+  border-radius: 20px;
+}
+
+.hero .des-header-p {
+  color: white;
 }
