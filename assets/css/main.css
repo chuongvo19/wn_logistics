@@ -1781,9 +1781,18 @@ section,
   color: white;
 }
 
-.img-logo-customer {
-  width: 100%;
-  max-height: 100%;
+.box_customer_logo {
+  height: 180px;
+}
+
+.box_img_logo {
+  /* display: flex; */
+  justify-content: center;
+}
+
+.img_logo_customer {
+  max-width: 100%;
+  max-height: 108px;
 }
 
 .box-logo-customer {
